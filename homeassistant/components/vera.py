@@ -32,7 +32,7 @@ CONF_CONTROLLER = 'vera_controller_url'
 CONF_EXCLUDE = 'exclude'
 CONF_LIGHTS = 'lights'
 
-ATTR_CURRENT_POWER_MWH = "current_power_mwh"
+ATTR_CURRENT_POWER_W = "current_power_w"
 
 VERA_DEVICES = defaultdict(list)
 
@@ -169,7 +169,7 @@ class VeraDevice(Entity):
 
         power = self.vera_device.power
         if power:
-            attr[ATTR_CURRENT_POWER_MWH] = convert(power, float, 0.0) * 1000
+            attr[ATTR_CURRENT_POWER_W] = convert(power, float, 0.0)
 
         attr['Vera Device Id'] = self.vera_device.vera_device_id
 
