@@ -1,4 +1,5 @@
-Home Assistant |Build Status| |Coverage Status| |Join the chat at https://gitter.im/home-assistant/home-assistant| |Join the dev chat at https://gitter.im/home-assistant/home-assistant/devs|
+Home Alone |Build Status| |Coverage Status| 
+
 ==============================================================================================================================================================================================
 
 Home Assistant is a home automation platform running on Python 3. The
